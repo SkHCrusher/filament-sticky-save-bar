@@ -20,7 +20,7 @@ use Cocosmos\FilamentStickySaveBar\Enums\Position;
         transform: translateY(0.5rem);
     }
     .ssb-bar--top {
-        top: 0;
+        top: var(--ssb-top, 0px);
         transform: translateY(-0.5rem);
     }
     .ssb-bar--visible {
@@ -283,6 +283,7 @@ window.__stickySaveBar = function (showOn, position) {
             let rect = mainCtn.getBoundingClientRect();
             this.$el.style.setProperty('--ssb-left', rect.left + 'px');
             this.$el.style.setProperty('--ssb-right', (window.innerWidth - rect.right) + 'px');
+            this.$el.style.setProperty('--ssb-top', rect.top + 'px');
         },
 
         _findFormWireId() {

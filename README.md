@@ -5,8 +5,6 @@
 
 A Filament v5 plugin that displays a floating action bar at the bottom (or top) of the viewport when a form has unsaved changes — so users on long edit pages never have to scroll back up to save.
 
-![Preview of the sticky save bar appearing at the bottom of an edit form](docs/images/preview.png)
-
 ---
 
 ## Features
