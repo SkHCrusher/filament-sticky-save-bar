@@ -1,0 +1,49 @@
+{
+    "name": "cocosmos/filament-sticky-save-bar",
+    "description": "A sticky save bar for Filament that floats at the bottom of the viewport when a form has unsaved changes",
+    "keywords": [
+        "filament",
+        "laravel",
+        "form",
+        "save",
+        "sticky",
+        "unsaved-changes"
+    ],
+    "homepage": "https://github.com/cocosmos/filament-sticky-save-bar",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cocosmos",
+            "email": "contact@mipam.ch",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "filament/filament": "^5.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cocosmos\\FilamentStickySaveBar\\": "src/"
+        }
+    },
+    "scripts": {
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {}
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cocosmos\\FilamentStickySaveBar\\FilamentStickySaveBarServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
