@@ -341,7 +341,9 @@ window.__stickySaveBar = function (showOn, position) {
         _updateVisibility() {
             const shouldShow = showOn === 'always'
                 ? this.buttonsOffscreen
-                : this.buttonsOffscreen && this.isDirty;
+                : showOn === 'dirty-always'
+                    ? this.isDirty
+                    : this.buttonsOffscreen && this.isDirty;
 
             // Never overlay an open modal.
             const modalOpen = !! document.querySelector('.fi-modal-window');
