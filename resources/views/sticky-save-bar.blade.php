@@ -282,7 +282,7 @@ window.__stickySaveBar = function (showOn, position) {
         _updateBarOffset(mainCtn) {
             let rect = mainCtn.getBoundingClientRect();
             this.$el.style.setProperty('--ssb-left', rect.left + 'px');
-            this.$el.style.setProperty('--ssb-right', (window.innerWidth - rect.right) + 'px');
+            this.$el.style.setProperty('--ssb-right', (document.documentElement.clientWidth - rect.right) + 'px');
             this.$el.style.setProperty('--ssb-top', rect.top + 'px');
         },
 
