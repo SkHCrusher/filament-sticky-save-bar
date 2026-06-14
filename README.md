@@ -102,7 +102,7 @@ StickySaveBarPlugin::make()
 | Value | Description |
 |---|---|
 | `ShowOn::Dirty` | *(default)* Only when the form is dirty **and** the native Save button has scrolled out of view |
-| `ShowOn::DirtyAlways` | Whenever the form is dirty, regardless of whether the native Save button is in view (the pattern Shopify uses) |
+| `ShowOn::DirtyAlways` | Whenever the form is dirty, regardless of whether the native Save button is in view |
 | `ShowOn::Always` | Whenever the native Save button is out of view, regardless of dirty state |
 
 ### Extra Buttons
