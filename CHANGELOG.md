@@ -2,6 +2,13 @@
 
 All notable changes to `filament-sticky-save-bar` will be documented in this file.
 
+## [1.1.0](https://github.com/cocosmos/filament-sticky-save-bar/compare/v1.0.1...v1.1.0) (2026-06-15)
+
+
+### Features
+
+* Add ShowOn::DirtyAlways to show the bar whenever the form is dirty ([a8bfbb4](https://github.com/cocosmos/filament-sticky-save-bar/commit/a8bfbb4027942131e6eb48ec2d671f050e2ee346))
+
 ## [1.0.1](https://github.com/cocosmos/filament-sticky-save-bar/compare/v1.0.0...v1.0.1) (2026-05-23)
 
 
