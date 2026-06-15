@@ -2,6 +2,13 @@
 
 All notable changes to `filament-sticky-save-bar` will be documented in this file.
 
+## [1.1.1](https://github.com/cocosmos/filament-sticky-save-bar/compare/v1.1.0...v1.1.1) (2026-06-15)
+
+
+### Miscellaneous Chores
+
+* Add contributing guidelines to CONTRIBUTING.md ([334bd45](https://github.com/cocosmos/filament-sticky-save-bar/commit/334bd4564f3fb42f8408292c2a11f7c379504212))
+
 ## [1.1.0](https://github.com/cocosmos/filament-sticky-save-bar/compare/v1.0.1...v1.1.0) (2026-06-15)
 
 
