@@ -250,10 +250,12 @@ window.__stickySaveBar = function (showOn, position) {
                             this._updateVisibility();
                         });
                     } else {
-                        // Optimistically mark dirty, then correct once we have the updated snapshot.
-                        this.isDirty = true;
-                        this._updateVisibility();
-
+                        // Do NOT optimistically flip to dirty here. A benign commit of
+                        // the tracked component (e.g. a re-render triggered by a Livewire
+                        // event with no data change) would otherwise flash the bar visible
+                        // for one network round-trip before being corrected below. Real
+                        // edits are already caught by the input/change handler; here we
+                        // only reconcile against the up-to-date snapshot once it arrives.
                         succeed(() => {
                             if (this._initialData !== null) {
                                 this.isDirty = JSON.stringify(component.snapshot.data ?? {}) !== this._initialData;
