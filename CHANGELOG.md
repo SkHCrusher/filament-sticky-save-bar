@@ -2,6 +2,14 @@
 
 All notable changes to `filament-sticky-save-bar` will be documented in this file.
 
+## [1.1.2](https://github.com/cocosmos/filament-sticky-save-bar/compare/v1.1.1...v1.1.2) (2026-06-17)
+
+
+### Bug Fixes
+
+* scope dirty-state detection to the tracked form ([e0438fe](https://github.com/cocosmos/filament-sticky-save-bar/commit/e0438fe106a83f231f1e12bce230c11ef7a0eb04))
+* scope dirty-state detection to the tracked form ([3b5f8e7](https://github.com/cocosmos/filament-sticky-save-bar/commit/3b5f8e7278aa2432ce74d083532faeeff0eda5f3))
+
 ## [1.1.1](https://github.com/cocosmos/filament-sticky-save-bar/compare/v1.1.0...v1.1.1) (2026-06-15)
 
 
