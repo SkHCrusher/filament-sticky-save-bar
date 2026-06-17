@@ -214,9 +214,14 @@ window.__stickySaveBar = function (showOn, position) {
                 }
             }
 
-            // Track dirty state: any input or change inside the form marks it dirty.
+            // Track dirty state: only input/change inside the TRACKED form marks
+            // it dirty. Using closest('form[wire:submit]') matched any Livewire
+            // form on the page — e.g. an action modal or relation-manager form
+            // (rendered outside this form) — which set isDirty=true. Because the
+            // commit hook only corrects the tracked form's component, the bar then
+            // stayed stuck on "unsaved changes" after saving in that other form.
             this._dirtyHandler = (e) => {
-                if (e.target.closest('form[wire\\:submit]')) {
+                if (this._form && this._form.contains(e.target)) {
                     this.isDirty = true;
                     this._updateVisibility();
                 }
